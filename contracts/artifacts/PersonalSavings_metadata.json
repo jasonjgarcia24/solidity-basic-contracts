@@ -1,0 +1,95 @@
+{
+	"compiler": {
+		"version": "0.5.5+commit.47a71e8f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"name": "_recipient",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "fundMoved",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AssetTransfer.sol": "PersonalSavings"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AssetTransfer.sol": {
+			"keccak256": "0xf459f87dc89b4fa5f728aabada4b3371e5173ffc68aed4033de737a1498559b5",
+			"urls": [
+				"bzzr://12e2884b042e0b36ec8e36d74cca938695845b486c44ccc7ff1f56ea285b95e3"
+			]
+		}
+	},
+	"version": 1
+}
