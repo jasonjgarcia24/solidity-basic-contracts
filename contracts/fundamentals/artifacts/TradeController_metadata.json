@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.5.5+commit.47a71e8f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_currentPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "makeTrade",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/fundamentals/TradeControllers.sol": "TradeController"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/fundamentals/TradeControllers.sol": {
+			"keccak256": "0x5af91c7ab7b231765451218edac8088fe334ae468d79a562f2319cff3c885470",
+			"urls": [
+				"bzzr://60c57329a6495f831df073da4511dd5f47e8d7292828c515e672be954ef2ad34"
+			]
+		}
+	},
+	"version": 1
+}
