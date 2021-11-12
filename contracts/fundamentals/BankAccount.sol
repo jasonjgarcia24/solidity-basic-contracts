@@ -11,9 +11,8 @@ contract BankAccount {
      *  you can send Ether to, while a plain address cannot be sent Ether.
      */
     function withdraw(uint _amount, address payable _recipient) public {
-        if (_recipient == accountOwner) {
-            return _recipient.transfer(_amount);
-        }
+        require(_recipient == accountOwner, "You are not authorized.");
+        return _recipient.transfer(_amount);
     }
     
     function deposit() public payable {}
