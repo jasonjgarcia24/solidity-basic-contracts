@@ -2,11 +2,12 @@ pragma solidity ^0.5.0;
 
 
 contract BankAccount {
-    address owner = 0xe67b33D7C5ff1Db9Bb12e5672c49Db3eEB87f3c6;
+    address payable owner = msg.sender;
     bool isNewAccount;
     uint public accountBalance;
     string customerFirstName;
     string customerLastName;
+    address payable authorizedRecipient = 0xe67b33D7C5ff1Db9Bb12e5672c49Db3eEB87f3c6;
     
     function getInfo() view public returns(address, bool, uint, string memory, string memory) {
         return (owner, isNewAccount, accountBalance, customerFirstName, customerLastName);
@@ -23,6 +24,7 @@ contract BankAccount {
     }
     
     function sendRemittance(uint _amount, address payable _recipient) public {
+        require(_recipient == owner || _recipient == authorizedRecipient, "Unauthorized recipient.");
         _recipient.transfer(_amount);
         accountBalance = address(this).balance;
     }

@@ -6,6 +6,36 @@
 	"output": {
 		"abi": [
 			{
+				"constant": true,
+				"inputs": [],
+				"name": "getInfo",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					},
+					{
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "string"
+					},
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"constant": false,
 				"inputs": [
 					{
@@ -17,10 +47,24 @@
 						"type": "address"
 					}
 				],
-				"name": "withdraw",
+				"name": "sendRemittance",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "accountBalance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -30,6 +74,28 @@
 				"outputs": [],
 				"payable": true,
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_isNewAccount",
+						"type": "bool"
+					},
+					{
+						"name": "_customerFirstName",
+						"type": "string"
+					},
+					{
+						"name": "_customerLastName",
+						"type": "string"
+					}
+				],
+				"name": "setInfo",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -47,7 +113,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/fundamentals/BankAccount.sol": "BankAccount"
+			"contracts/fundamentals/CustomerAccount.sol": "BankAccount"
 		},
 		"evmVersion": "petersburg",
 		"libraries": {},
@@ -58,10 +124,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/fundamentals/BankAccount.sol": {
-			"keccak256": "0x89e22a9e0c5312ef233dd151422b54160282b59a7e716705a7d0c8bdb7e1f1bb",
+		"contracts/fundamentals/CustomerAccount.sol": {
+			"keccak256": "0xa2a9e00e820a9dad3f9c78c2ba144d41c4798901bdf65ec4c77a27f04d0e95d2",
 			"urls": [
-				"bzzr://c51d5278ceff3f68e2d3bc8e3de019a7a817a9be1255531cc34253aed219094e"
+				"bzzr://936d40af6d25545d5f0b3e4cb90c144ca47932cdbd5f819bc211899ff36a309b"
 			]
 		}
 	},
