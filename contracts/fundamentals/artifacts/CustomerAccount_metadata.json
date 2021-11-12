@@ -6,6 +6,58 @@
 	"output": {
 		"abi": [
 			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_isNewAccount",
+						"type": "bool"
+					},
+					{
+						"name": "_accountBalance",
+						"type": "uint64"
+					},
+					{
+						"name": "_customerFirstName",
+						"type": "string"
+					},
+					{
+						"name": "_customerLastName",
+						"type": "string"
+					}
+				],
+				"name": "setInfo",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getInfo",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"name": "",
+						"type": "uint64"
+					},
+					{
+						"name": "",
+						"type": "string"
+					},
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"constant": true,
 				"inputs": [],
 				"name": "getAccountBalance",
@@ -69,9 +121,9 @@
 	},
 	"sources": {
 		"contracts/fundamentals/CustomerAccount.sol": {
-			"keccak256": "0x811cddfa56679abf13e077795932fd48ded00ec4527ffa3058c71c625abd90a2",
+			"keccak256": "0xec37e3e458b0b619f596a53ece32c5f580d71c9173d82ba35bf1892244a2e94e",
 			"urls": [
-				"bzzr://17abbe76d159dfbda1323457d60ddafcc2679345392806812fbe321edf0a124e"
+				"bzzr://3f304118cdd7e81e4385549411869b0462c8e0c56ee5a55a8932e5e0232d8592"
 			]
 		}
 	},
