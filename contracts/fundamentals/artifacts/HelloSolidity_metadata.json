@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.5.5+commit.47a71e8f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "message",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/fundamentals/HelloSolidity.sol": "HelloSolidity"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/fundamentals/HelloSolidity.sol": {
+			"keccak256": "0x06ac968a5dfd9a16c2f50783618b290cf0a21b4ffb2414e73c85b8bfb19da7f3",
+			"urls": [
+				"bzzr://424c717c8ab07d5029bb7e055b5582dfaef93e5ff24c6ef85727065cd2335e81"
+			]
+		}
+	},
+	"version": 1
+}

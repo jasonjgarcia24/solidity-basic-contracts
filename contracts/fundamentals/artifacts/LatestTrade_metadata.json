@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.5.5+commit.47a71e8f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getLatestTrade",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_newCoin",
+						"type": "string"
+					},
+					{
+						"name": "_newPrice",
+						"type": "uint256"
+					},
+					{
+						"name": "_isBuy",
+						"type": "bool"
+					}
+				],
+				"name": "updateTrade",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"name": "_receiver",
+						"type": "address"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "setTransferInfo",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/fundamentals/LatestTrade.sol": "LatestTrade"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/fundamentals/LatestTrade.sol": {
+			"keccak256": "0x0a98f9b30bf2a430ea0b4900b3a06afbf8f7062bddf03a7608164709c6f08404",
+			"urls": [
+				"bzzr://cb7bb20aa6824c7f9fb12192172e7ffe6ed5c8ade4b1e66e5fc503a2e14ff425"
+			]
+		}
+	},
+	"version": 1
+}
