@@ -1,10 +1,24 @@
 {
 	"compiler": {
-		"version": "0.5.5+commit.47a71e8f"
+		"version": "0.5.0+commit.1d4f565a"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"name": "updateMessage",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
 			{
 				"constant": true,
 				"inputs": [],
@@ -18,6 +32,17 @@
 				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			}
 		],
 		"devdoc": {
@@ -31,7 +56,7 @@
 		"compilationTarget": {
 			"contracts/fundamentals/HelloSolidity.sol": "HelloSolidity"
 		},
-		"evmVersion": "petersburg",
+		"evmVersion": "byzantium",
 		"libraries": {},
 		"optimizer": {
 			"enabled": false,
@@ -41,9 +66,9 @@
 	},
 	"sources": {
 		"contracts/fundamentals/HelloSolidity.sol": {
-			"keccak256": "0x06ac968a5dfd9a16c2f50783618b290cf0a21b4ffb2414e73c85b8bfb19da7f3",
+			"keccak256": "0x3d9032b78cb737cc8b31f9d9657c0ff351ef4b217e35843c85e76552bddae05a",
 			"urls": [
-				"bzzr://424c717c8ab07d5029bb7e055b5582dfaef93e5ff24c6ef85727065cd2335e81"
+				"bzzr://b4376adc2f3cf62e22fc1dc3134c067dbe62f079b4b239f80029be8adb1a60db"
 			]
 		}
 	},
